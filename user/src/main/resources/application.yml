@@ -8,3 +8,6 @@ spring:
       config:
          enabled: true
          uri: http://localhost:9200
+eureka:
+   instance:
+      prefer-ip-address: true

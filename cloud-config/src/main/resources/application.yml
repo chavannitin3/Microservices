@@ -12,3 +12,6 @@ spring:
             git:
                uri: https://github.com/chavannitin3/config-server
                clone-on-start: true
+eureka:
+   instance:
+      prefer-ip-address: true
