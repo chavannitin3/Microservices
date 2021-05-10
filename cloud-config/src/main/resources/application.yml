@@ -1,12 +1,14 @@
 server:
-   port: 9200
+   port: 9050
 
 spring:
    application:
       name: CONFIG-SERVER
+   profiles:   
+     active: native
    cloud:
       config:
          server:
             git:
-               uri: https://github.com/chavannitin3/config-server.git
+               uri: https://github.com/chavannitin3/config-server
                clone-on-start: true
