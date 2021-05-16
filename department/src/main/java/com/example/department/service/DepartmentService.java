@@ -1,5 +1,7 @@
 package com.example.department.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,4 +23,7 @@ public class DepartmentService {
 		return departementRepository.findByDepartmentId(departmentId);
 	}
 
+	public List<Departement> getDepartment(){
+		return departementRepository.findAll();
+	}
 }

@@ -1,5 +1,7 @@
 package com.example.user.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -29,5 +31,9 @@ public class UserService {
 		userDepartmentModel.setUser(user);
 		userDepartmentModel.setDepartment(department);
 		return userDepartmentModel;
+	}
+	
+	public List<User> getUsers(){
+		return userRepository.findAll();
 	}
 }
